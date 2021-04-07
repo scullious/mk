@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #010202;
+    font-family: 'Source sans pro', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    width: 90%;
+    max-width: 1146px;
+    margin: auto;
+    padding: 56px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+}
+
+.user-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.user-name {
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
+    margin-right: 15px;
+}
+
+.app {
+    /*background: linear-gradient(90deg, #010202 0%, rgba(1, 2, 2, 0.2) 70.9%),*/
+        /*url('../img/cover-image.jpg') no-repeat center right;*/
+        
+    background: linear-gradient(90deg, #010202 0%, #010202 45%, rgba(1, 2, 2, 0.2) 90%);
+    min-height: 100vh;
+    color: #fff;
+}
+
+.film {
+    width: 90%;
+    max-width: 1146px;
+    margin: auto;
+    padding: 7% 0;
+}
+
+.tags {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    opacity: 0.4;
+    color: #e5e5e5;
+    font-size: 16px;
+    line-height: 140%;
+}
+
+.tags > *:not(:last-child) {
+    margin-right: 15px;
+    margin-bottom: 5px;
+}
+
+.age {
+    border: 1px solid #fff;
+    box-sizing: border-box;
+    border-radius: 2px;
+    padding: 1px 5px;
+}
+
+.description {
+    max-width: 460px;
+    font-size: 21px;
+    line-height: 140%;
+    margin-bottom: 36px;
+}
+
+.button-group {
+    display: flex;
+}
+
+.button {
+    padding: 11px 26px;
+    border-radius: 6px;
+    border: none;
+    font-size: 16px;
+    line-height: 140%;
+    background: #2f2f2f;
+    color: #fff;
+    cursor: pointer;
+}
+
+.button-primary {
+    background: #ea6e20;
+    margin-right: 15px;
+}
+
+.button-default {
+    display: flex;
+    align-items: center;
+}
+
+.button-text {
+    margin-left: 10px;
+    /*vertical-align: text-bottom;*/
+}
+
+@media (max-width: 1200px) {
+    
+}
+
+@media (max-width: 768px) {
+    .app {
+        height: auto;
+        padding-bottom: 400px;
+        background: url("../img/cover-image.jpg") no-repeat bottom center / 300px;
+    }
+    
+    video {
+        display: none;
+    }
+    
+    .film {
+        padding-top: 2%;
+    }
+    
+    .film-logo {
+        max-width: 100%;
+    }
+    
+    .tags {
+        /*flex-direction: column;*/
+    }
+    
+    .description {
+        font-size: 16px;
+        max-width: 333px;
+    }
+    
+    .button-group {
+        /*justify-content: center;*/
+    }
+}
+
+@media (max-width: 576px) {
+    .user-name {
+        display: none;
+    }
+    
+    .button-text {
+        display: none;
+    }
+    
+    .app {
+        padding-bottom: 350px;
+        background-size: 300px;
+    }
+}
